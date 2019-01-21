@@ -12,7 +12,12 @@ namespace WebApplicationVidly.Models
         public short SignUpFee { get; set; }
         public byte DurationInMonth { get; set; }
         public byte DiscountRate { get; set; }
+
         [Required]
         public string Name { get; set; }
+
+        public static readonly byte unknown = 0;
+        public static readonly byte payAsUGo = 1;
+
     }
 }
