@@ -19,7 +19,9 @@ namespace WebApplicationVidly.Dtos
 
         public byte MembershipTypeId { get; set; }
 
-       // [Min18YearsForMembership]
+        public MembershipTypeDto MembershipType { get; set; }
+
+        // [Min18YearsForMembership]
         public DateTime? BirthDate { get; set; }
     }
 }
